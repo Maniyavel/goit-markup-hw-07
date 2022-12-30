@@ -1,0 +1,82 @@
+ .projects__title {
+     color: var(--secondary-text-color);
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 2;
+     margin-bottom: 4px;
+ }
+
+ .projects__description {
+     font-size: 16px;
+     line-height: 1.875;
+ }
+
+
+
+
+ .projects {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+
+ }
+
+ .projects__item {
+     width: calc((100% - 2*30px) / 3);
+
+ }
+
+ .projects__item:hover,
+ .projects__item:focus {
+     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .projects__item:hover .projects__overlay-text {
+     transform: translateY(0%);
+
+ }
+
+ .projects__card-overlay {
+     position: relative;
+     overflow: hidden;
+
+ }
+
+
+
+ .projects__overlay-text {
+     position: absolute;
+     background-color: rgba(33, 150, 243, 0.9);
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transform: translateY(100%);
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     transition-delay: transform 250ms;
+ }
+
+
+
+ .projects__otherside-text {
+     color: var(--white-color);
+     font-size: 18px;
+     line-height: 1.555;
+     padding-top: 63px;
+     padding-left: 24px;
+     padding-right: 24px;
+     padding-bottom: 24px;
+ }
+
+
+
+ .projects__text {
+     border-bottom: 1px solid #EEEEEE;
+     border-right: 1px solid #EEEEEE;
+     border-left: 1px solid #EEEEEE;
+     padding-left: 24px;
+     padding-bottom: 20px;
+     padding-top: 20px;
+ }
