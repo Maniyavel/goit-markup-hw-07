@@ -107,7 +107,7 @@ textarea {
 
 }
 
-.nav-item {
+.nav__item {
     position: relative;
     display: flex;
     margin-left: 50px;
@@ -548,7 +548,7 @@ textarea {
 
 }
 
-.logo-footer-accent {
+.logo__footer-accent {
     color: var(--white-color);
 }
 
@@ -556,7 +556,7 @@ textarea {
     margin-top: 28px;
 }
 
-.footer__adress-text {
+.footer__address-text {
     font-style: initial;
     margin-bottom: 12px;
 }

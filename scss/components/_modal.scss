@@ -49,16 +49,17 @@
     cursor: pointer;
     justify-content: center;
     align-items: center;
+
+    &__icon {
+    
+            width: 18px;
+            height: 18px;
+            right: 50%;
+            align-items: center;
+    
+        }
 }
 
-.close__icon {
-
-    width: 18px;
-    height: 18px;
-    right: 50%;
-    align-items: center;
-
-}
 
 .close:hover,
 .close:focus {

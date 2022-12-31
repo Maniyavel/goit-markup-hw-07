@@ -33,11 +33,13 @@
     padding: 10px 28px;
     margin-left: 12px;
     display: flex;
+
+    &__send-icon {
+            margin-left: 10px;
+        }
 }
 
-.footer-button__send-icon {
-    margin-left: 10px;
-}
+
 
 .button__form {
     padding: 10px 52px;
@@ -56,6 +58,9 @@
 
 
 
-    .filter__button:active {
-        color: var(--white-color);
-    }
+   
+}
+
+ .filter__button:active {
+     color: var(--white-color);
+ }

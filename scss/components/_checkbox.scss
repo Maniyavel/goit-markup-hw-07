@@ -1,7 +1,4 @@
-.checkbox__input {
-    appearance: none;
-    margin-right: 12px;
-}
+
 
 .checkbox {
     position: relative;
@@ -12,18 +9,27 @@
     letter-spacing: 0.03em;
     font-weight: 400;
     margin-bottom: 30px;
+
+    &__input {
+        appearance: none;
+        margin-right: 12px;
+    }
+
+
+   &__icon {
+       fill: transparent;
+       border: 0.2px solid var(--secondary-text-color);
+            position: absolute;
+            transform: translate(-50%);
+            top: 4px;
+            left: 25px;
+            width: 16px;
+            height: 15px;
+        }
+
 }
 
-.checkbox__icon {
-    fill: transparent;
-    border: 0.2px solid var(--secondary-text-color);
-    position: absolute;
-    transform: translate(-50%);
-    top: 4px;
-    left: 25px;
-    width: 16px;
-    height: 15px;
-}
+
 
 
 
