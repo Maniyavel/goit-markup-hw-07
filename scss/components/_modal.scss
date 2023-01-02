@@ -50,18 +50,18 @@
     justify-content: center;
     align-items: center;
 
-    &__icon {
+    .close__icon {
     
-            width: 18px;
-            height: 18px;
-            right: 50%;
-            align-items: center;
-    
+        width: 18px;
+        height: 18px;
+        right: 50%;
+        align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+         fill: var(--accent-color);
         }
 }
 
 
-.close:hover,
-.close:focus {
-    fill: var(--accent-color);
-}

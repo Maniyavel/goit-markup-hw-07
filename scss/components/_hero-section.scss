@@ -1,5 +1,5 @@
 /*Герой*/
-.hero {
+ .hero{
     padding: 200px 0;
     height: 600px;
     max-width: 1600px;
@@ -12,8 +12,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+ 
 
-  &__title {
+  .hero__title {
         color: var(--white-color);
         font-weight: 900;
         font-size: 44px;

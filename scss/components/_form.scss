@@ -1,29 +1,41 @@
 /*forms*/
 
-.modal-form__title {
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
 
-    margin-bottom: 12px;
-    font-weight: 700;
-
-    color: var(--secondary-text-color);
-}
 
 .modal-form {
     width: 448px;
     margin-left: auto;
     margin-right: auto;
+
+    .modal-form__label {
+    
+            font-size: 12px;
+            line-height: 1.166;
+        }
+
+
+    .modal-form__title {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.15;
+            letter-spacing: 0.03em;
+    
+            margin-bottom: 12px;
+            font-weight: 700;
+    
+            color: var(--secondary-text-color);
+        }
+
+
+        .modal-form __comment {
+               font-size: 12px;
+               line-height: 1.166;
+               color: var(--primary-text-color);
+           }
 }
 
-.modal-form__label {
 
-    font-size: 12px;
-    line-height: 1.166;
-}
 
 .form-field__input {
     height: 40px;
@@ -33,6 +45,19 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 
+    &::placeholder {
+        color: var(--primary-text-color);
+    
+        }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: 1px solid var(--accent-color);
+        }
+
 }
 
 
@@ -41,47 +66,22 @@
     margin-top: 4px;
     margin-bottom: 10px;
 
+    .form-field__icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 12px;
+    
+        }
+
 }
 
-.form-field__icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12px;
-
-}
 
 
 .form-field__input:focus+.form-field__icon {
     fill: var(--accent-color);
 }
 
-.form-input:hover {
-    cursor: pointer;
-}
-
-.form-textarea:hover {
-    cursor: pointer;
-}
-
-.form-input:focus {
-    outline: 1px solid var(--accent-color);
-}
-
-.form-textarea:focus {
-    outline: 1px solid var(--accent-color);
-}
-
-.form-field input::placeholder {
-    color: var(--primary-text-color);
-
-}
-
-.modal-form__comment {
-    font-size: 12px;
-    line-height: 1.166;
-    color: var(--primary-text-color);
-}
 
 .form-field__textarea {
     width: 100%;
@@ -92,11 +92,20 @@
     line-height: 1.166;
     padding-left: 16px;
     padding-top: 16px;
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.166;
+        color: rgba(117, 117, 117, 0.5)
+        }
+
+    &:hover {
+        cursor: pointer;
+        }
+
+
+    &:focus {
+        outline: 1px solid var(--accent-color);
+        }
 }
 
-form-field__textarea::placeholder {
-    font-size: 12px;
-    line-height: 1.166;
-
-    color: rgba(117, 117, 117, 0.5)
-}

@@ -10,13 +10,13 @@
     font-weight: 400;
     margin-bottom: 30px;
 
-    &__input {
+    .checkbox__input {
         appearance: none;
         margin-right: 12px;
     }
 
 
-   &__icon {
+   .checkbox__icon {
        fill: transparent;
        border: 0.2px solid var(--secondary-text-color);
             position: absolute;

@@ -1,13 +1,4 @@
-.button:active {
-    color: var(--background-color-secondary);
-}
 
-.button:hover,
-.button:focus {
-    background-color: #188CE8;
-    color: var(--white-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
 
 .button {
     color: var(--white-color);
@@ -27,6 +18,17 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color, color, box-shadow;
+
+    &:active {
+            color: var(--background-color-secondary);
+        }
+    
+        &:hover,
+        &:focus {
+            background-color: #188CE8;
+            color: var(--white-color);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
 }
 
 .footer-button {
@@ -34,7 +36,7 @@
     margin-left: 12px;
     display: flex;
 
-    &__send-icon {
+    .footer-button__send-icon {
             margin-left: 10px;
         }
 }
@@ -56,11 +58,11 @@
     border: 1px solid transparent;
     padding: 6px 22px;
 
-
+ &:active {
+        color: var(--white-color);
+    }
 
    
 }
 
- .filter__button:active {
-     color: var(--white-color);
- }
+ 

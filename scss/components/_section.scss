@@ -5,6 +5,5 @@
 .work-section,
 .team-section,
 .clients-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @extend %section;
 }

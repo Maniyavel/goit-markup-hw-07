@@ -36,11 +36,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill, border;
+
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border: 1px solid rgba(33, 150, 243, 1);
+    }
 }
 
-.client-section__icon:hover,
-.client-section__icon:focus {
-    fill: var(--accent-color);
-    border: 1px solid rgba(33, 150, 243, 1);
-
-}
