@@ -2,6 +2,7 @@
 
 .work-section {
     padding-top: 0px;
+    @extend %section;
 
   .work-section__title {
         color: var(--secondary-text-color);
